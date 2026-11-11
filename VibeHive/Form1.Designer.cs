@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnEvents = new Button();
+            btnAlbums = new Button();
             SuspendLayout();
             // 
             // btnEvents
@@ -42,11 +43,23 @@
             btnEvents.UseVisualStyleBackColor = true;
             btnEvents.Click += btnEvents_Click;
             // 
+            // btnAlbums
+            // 
+            btnAlbums.Font = new Font("Segoe UI", 30F);
+            btnAlbums.Location = new Point(182, 176);
+            btnAlbums.Name = "btnAlbums";
+            btnAlbums.Size = new Size(413, 70);
+            btnAlbums.TabIndex = 1;
+            btnAlbums.Text = "Albums";
+            btnAlbums.UseVisualStyleBackColor = true;
+            btnAlbums.Click += btnAlbums_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAlbums);
             Controls.Add(btnEvents);
             Name = "Form1";
             Text = "Form1";
@@ -56,5 +69,6 @@
         #endregion
 
         private Button btnEvents;
+        private Button btnAlbums;
     }
 }
