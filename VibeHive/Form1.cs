@@ -6,5 +6,11 @@ namespace VibeHive
         {
             InitializeComponent();
         }
+
+        private void btnEvents_Click(object sender, EventArgs e)
+        {
+            EventsForm eventsForm = new EventsForm();
+            eventsForm.Show();
+        }
     }
 }
